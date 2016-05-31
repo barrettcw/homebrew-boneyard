@@ -5,6 +5,13 @@ class Cvc4 < Formula
   version "1.5pre-smtcomp2016"
   sha256 "ee0bb9a9393ced0dd9ed657faacaf717c18a9f7e9206cc33530827e6e8059f97"
 
+  bottle do
+    cellar :any
+    sha256 "45e90f3952ba323a73d0377947de1377ab421941284a10bf1989650a8f8f0e6b" => :el_capitan
+    sha256 "0fcfa3a3dcad9ecd8fa457f6568458cba0f4eb020bf541515edbc8ea525a1b0f" => :yosemite
+    sha256 "784e380d0c9753764618fd81144e29f8c26f2436ac4468ae822eff70d412558d" => :mavericks
+  end
+
   head do
     url "http://cvc4.cs.nyu.edu/builds/src/unstable/latest-unstable.tar.gz"
   end
